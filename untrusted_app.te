@@ -207,6 +207,7 @@ ifelse(shipping_build, `true', ,`
   userdebug_or_eng(`
     -method_trace_data_file # only on ro.debuggable=1
     -coredump_file          # userdebug/eng only
+    -custom_coredump_file
   ')
 }:dir_file_class_set { create unlink };
 
